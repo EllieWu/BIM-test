@@ -65,6 +65,10 @@
     position: absolute;
     background-color: transparent;
     border: 0px;
+    li a:hover{
+        background-color: #626262;
+        color: white;
+    }
 }
 .button-dropdown{
     background: transparent;
@@ -81,6 +85,29 @@
         outline:0px;
     }
 }
-.navbar-nav{
-    float: unset;
+
+.navbar-inverse{
+    .navbar-nav{
+        float: unset;
+        .open >a:focus{
+            background-color: transparent;
+        }
+    }
+    .navbar-brand{
+        color: #ffffffcc;
+    }
+    .navbar-nav >li >a{
+        color: #ffffffcc;
+        &:hover{
+            color: black;
+            background-color: aliceblue;
+            border-radius: 5px;
+            
+        }
+    }
+    
+}
+.nav>li>a{
+    margin: 10px;
+    padding: 5px 10px;
 }

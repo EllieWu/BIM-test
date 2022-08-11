@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  font-weight: 600;
+  width: 80vw;
+  max-width: 80vw;
+  padding: 0;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895327.jpg?w=1060&t=st=1659930198~exp=1659930798~hmac=184909fb22f9b18b9e459fea871c13f5b259fdab61e29c0c6a17e93fbf5b5744") no-repeat 0% 10%/cover;
+  height: 100vh;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+.nav-ul {
+  font-size: 16px;
+}
+
+.bannerContainer {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bannerContainer .building-name h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.bannerContainer .building-name p {
+  font-size: 1.5rem;
+}
+.bannerContainer-btn {
+  border-radius: 8px;
+  background-color: rgba(195, 195, 195, 0.3607843137);
+  padding: 11px;
+  width: 45%;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn-group .btn-text-box {
+  text-align: center;
+  width: 14%;
+  position: relative;
+}
+.btn-group .btn-text-box .accordion-body {
+  height: 150px;
+}
+
+.btn-img-box {
+  background-color: rgb(251, 251, 251);
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+}
+.btn-img-box:hover {
+  background-color: #c7c5c5;
+}
+.btn-img-box .btn-img {
+  width: 90%;
+  padding: 7px;
+}
+
+.accordion-body {
+  color: black;
+}
+
+.dropdown-btn {
+  background: transparent;
+  border: 0px;
+  margin-top: 0.75rem;
+}
+
+.dropdown ul {
+  background-color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: transparent;
+  border: 0px;
+}
+
+.button-dropdown {
+  background: transparent;
+  border: 0px;
+}
+
+.btn {
+  display: block;
+}
+.btn:hover {
+  background-color: #626262;
+  color: white;
+}
+.btn:focus {
+  outline: 0px;
+}
+
+.navbar-nav {
+  float: unset;
+}
+
+@media (max-width: 992px) {
+  .building-name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .bannerContainer-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .btn-group {
+    justify-content: start;
+  }
+  .btn-group .btn-text-box {
+    width: 14%;
+  }
+  .building-name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .bannerContainer-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .btn-group .btn-text-box {
+    width: 20%;
+    font-size: 14px;
+  }
+  .btn-img-box {
+    width: 60%;
+  }
+}
+.modal-header {
+  background: #22252b;
+  color: #dcdfe8;
+}
+.modal-header .close {
+  margin-top: 0;
+  color: white;
+  text-shadow: 0 0.5px 0 #fff;
+}
+
+.btn-secondary {
+  background: #575e70;
+  color: #dcdfe8;
+  margin: 0 10px;
+}
+
+.modal-footer {
+  background: #22252b;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body {
+  overflow-y: scroll;
+  height: 40vh;
+  padding: 0;
+}
+
+.modal-content {
+  width: 80%;
+}
+
+.table {
+  margin-bottom: 0;
+}
+.table tbody tr th {
+  padding: 18px;
+  background: rgba(87, 94, 112, 0.0901960784);
+  border-right: 1px solid #ddd;
+}
+.table tbody tr td {
+  padding: 18px;
+}
+
+.detail-btn {
+  background-color: rgba(137, 135, 135, 0.8196078431);
+  border: 0px;
+  padding: 10px 0px;
+  border-radius: 7px;
+}
+.detail-btn img {
+  width: 50%;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgba(87, 94, 112, 0.0901960784);
+  border-bottom: 1px dashed rgba(85, 85, 85, 0.3333333333);
+}
+.body-content-item {
+  display: flex;
+  margin: 8px 0;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.3333333333);
+  padding-bottom: 8px;
+}
+.body-content-item h3 {
+  margin-right: 1rem;
+  width: 30%;
+  border-right: 1px solid #555;
+}
+
+.fix-box {
+  padding: 25px;
+}
+.fix-box-title {
+  margin-bottom: 1rem;
+}
+.fix-box-title h3 {
+  margin-bottom: 0.5rem;
+}
+
+.fix-box-title-select {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(85, 85, 85, 0.3333333333);
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.fix-icon {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30%;
+}/*# sourceMappingURL=all2.css.map */

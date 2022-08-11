@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <!-- Boostrap3 -->
+    <link rel="stylesheet" href="./sass/base/bootstrap.css">
+
+    <!-- myCss -->
+    <link rel="stylesheet" href="./sass/all.css">
+
+    <!-- Scripts -->
+    <!-- <script src="./sass/Scripts/jquery-3.4.1.js"></script> -->
+    
+
+    <!-- <script src="sass/Scripts/popper.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">BIM設施管理系統</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="其他選項">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <ul class="nav navbar-nav navbar-collapse collapse">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">BIM
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">全區</a></li>
+                  <li><a href="#">主題館(A、B、C、D棟)</a></li>
+                  <li><a href="#">行政教育中心(E、F棟)</a></li>
+                  <li><a href="#">研究典藏中心(G棟)</a></li>
+                  <li><a href="#">海洋劇場及地下停車場(H棟)</a></li>
+                  <li><a href="#">區域探索館</a></li>
+                  <li><a href="#">潮境智能海洋館</a></li>
+                </ul>
+              </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">IoT設備監控整合
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">主題館(A、B、C、D棟)</a></li>
+                    <li><a href="#">行政教育中心(E、F棟)</a></li>
+                    <li><a href="#">研究典藏中心(G棟)</a></li>
+                    <li><a href="#">海洋劇場及地下停車場(H棟)</a></li>
+                    <li><a href="#">區域探索館</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="#">IoT歷史紀錄查詢</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">報修管理
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">內巡報修管理</a></li>
+                  <li><a href="#">外巡報修管理</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">巡檢管理
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">巡檢工單管理</a></li>
+                  <li><a href="#">巡檢路線管理</a></li>
+                </ul>
+              </li>
+            <li><a href="#">以資查圖</a></li>
+            <li><a href="#">竣工圖管理</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">3D圖控模組
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">空調設備</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">系統管理
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">密碼變更</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li><a href="#">帳號管理</a></li>
+                  <li><a href="#">群組管理</a></li>
+                  <li><a href="#">權限管理</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li><a href="#">kiosk訊息管理</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">kiosk模組
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">首頁</a></li>
+                </ul>
+              </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"></span>註冊</a></li>
+            <li><a href="#"></span>登入</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="bannerContainer">
+        <div class="building-name">
+            <h2>主題館(ABCD棟)</h2>
+            <p>A109梯廳</p>
+        </div>
+        <div class="bannerContainer-btn">
+            <div class="btn-group">
+                <div class="btn-text-box ">
+                    <div class="btn-text">
+                        出入口門廳
+                    </div>
+                  <button class="dropdown-btn dropdown-toggle"  type="button" data-toggle="collapse" data-target="#collapse01">
+                    
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png"  alt="">
+                    </div>
+                    <div  id="collapse01" class="button-dropdown  dropdown-menu" data-bs-toggle="collapse" >
+                        <select class="accordion-body" multiple size="11"></select>
+                    </div>
+                  </button>
+                    
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse02">
+                    <div class="btn-text">
+                        辦公室
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png"  alt="">
+                    </div>
+                    <div  id="collapse02" class="button-dropdown  dropdown-menu">
+                    <select class="accordion-body" multiple size="11"></select>
+                    </div>
+                  </button>
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse03" >
+                    <div class="btn-text">
+                        機房
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png" alt="">
+                    </div>
+                    <div  id="collapse03" class="button-dropdown  dropdown-menu">
+                    <select class="accordion-body" multiple size="11"></select>
+                </div>
+              </button>
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse04">
+                    <div class="btn-text">
+                        通道
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png" alt="">
+                    </div>
+                    <div  id="collapse04" class="button-dropdown  dropdown-menu">
+                    <select class="accordion-body" multiple size="11"></select>
+                </div>
+                  </button>
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse05">
+                    <div class="btn-text">
+                        盥洗室
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png" alt="">
+                    </div>
+                   <div  id="collapse05" class="button-dropdown dropdown-menu" >
+                    <select  class="accordion-body" multiple size="11"></select>
+                </div> 
+              </button>
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse06">
+                    <div class="btn-text">
+                        其他
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png" alt="">
+                    </div>
+                    <div  id="collapse06" class="button-dropdown dropdown-menu">
+                    <select  class="accordion-body" multiple size="11"></select>
+                </div>
+              </button>
+                </div>
+                <div class="btn-text-box">
+                  <button class="dropdown-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse07">
+                    <div class="btn-text">
+                        其他
+                    </div>
+                    <div class="btn-img-box">
+                      <img class="btn-img" src="https://www.iconpacks.net/icons/2/free-exit-logout-icon-2857-thumb.png" alt="">
+                    </div>
+                    <div  id="collapse07" class="button-dropdown dropdown-menu">
+                    <select class="accordion-body" multiple size="11"></select>
+                </div>
+              </button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+    $.getJSON("spaceData.JSON", function (gridData) {
+        console.log(gridData);
+        
+        function createInspMenu(data) {
+          // 建立InspMenu 次選單選項
+          $.each(data, function (i, item) {
+            //空間項目比對
+            var inspIdNum ="";
+            switch (item.data02) {
+              case "entrance":
+                inspIdNum = "01";
+                break;
+
+              case "office":
+                inspIdNum = "02";
+                break;
+
+              case "tool":
+                inspIdNum = "03";
+                break;
+
+              case "sta":
+                inspIdNum = "04";
+                break;
+
+              case "toi":
+                inspIdNum = "05";
+                break;
+
+              case "oth":
+                inspIdNum = "06";
+                break;
+
+              case "doc":
+                inspIdNum = "07";
+                break;
+            }
+
+            //按鈕樣式
+            var str =
+              '<option class="btn" (\'' +
+              item.data01 +
+              '\')">';
+            str += item.data01;
+            str += "</option>";
+
+            $("#heading" + inspIdNum + " .btnhover").attr( "data-bs-target","#collapse" + inspIdNum); //連結次選單
+            $("#collapse" + inspIdNum + " .accordion-body").append(str); //匯入次選單選項
+          });
+        }
+        createInspMenu(gridData);
+      });
+      jQuery(document).ready(function (e) {
+            function t(t) {
+                e(t).bind("click", function (t) {
+                    t.preventDefault();
+                    e(this).parent().fadeOut()
+                })
+            }
+            e(".dropdown-toggle").click(function () {
+                var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+                e(".button-dropdown .dropdown-menu").hide();
+                e(".button-dropdown .dropdown-toggle").removeClass("active");
+                if (t) {
+                    e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+                }
+            });
+            e(document).bind("click", function (t) {
+                var n = e(t.target);
+                if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+            });
+            e(document).bind("click", function (t) {
+                var n = e(t.target);
+                if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+            })
+        });
+
+      // function btnopen(){
+      //   $("#a1").dialog()
+      // }
+      // let select = document.getElementById('#freightType')
+      // select.focus()//聚焦
+      // select.setAttribute("size",select.options.length); // 设置
+      
+
+      // function open(id){//id就是html元素select的id
+
+      //   var elem ＝ $("#select");
+
+      //   if(document.createEvent){
+        
+      //   e.initMouseEvent("mousedown");
+        
+      //   elem[0].dispatchEvent(e);
+        
+      //   }else if(element.fireEvent){
+        
+      //   elem[0].fireEvent("onmousedown");
+        
+      //   }
+
+      //   }
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 .bannerContainer{
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     color: white;
     justify-content: space-between;
@@ -17,9 +17,9 @@
     }
     &-btn{
         border-radius: 8px;
-        background-color: #c3c3c35c;
+        background-color: #2222224a;
         padding: 11px;
-        width: 45%;
+        width: 40%;
         
     }
 }
@@ -58,18 +58,49 @@
     border: 0px;
     margin-top: 0.75rem;
 }
-.dropdown ul{
-    background-color: white;
-}
+// .dropdown ul{
+//     background-color: white;
+// }
 .dropdown-menu{
     position: absolute;
-    background-color: transparent;
+    background-color: #222;
     border: 0px;
-    li a:hover{
-        background-color: #626262;
-        color: white;
+    box-shadow: 0px 0px 0px 0px;
+    li a{
+        color:white;
+        &:hover{
+            background-color: #626262;
+            color: white;
+        }
     }
+   
 }
+
+.dropdown .dropdown-menu {
+    -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .dropdown.open .dropdown-menu {
+    -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    transition: max-height 1s, opacity 0.2s, visibility 0s;
+    max-height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
 .button-dropdown{
     background: transparent;
     border: 0px;
@@ -87,6 +118,12 @@
 }
 
 .navbar-inverse{
+    .navbar-toggle{
+        border:0px;
+        &:focus{
+            background-color: unset;
+        }
+    }
     .navbar-nav{
         float: unset;
         .open >a:focus{
@@ -95,6 +132,11 @@
     }
     .navbar-brand{
         color: #ffffffcc;
+        padding: 10px 15px 5px 15px;
+        img{
+            display: unset;
+            margin-right: 12px;
+        }
     }
     .navbar-nav >li >a{
         color: #ffffffcc;
@@ -110,4 +152,7 @@
 .nav>li>a{
     margin: 10px;
     padding: 5px 10px;
+}
+.bg-t{
+    background-color: transparent;
 }

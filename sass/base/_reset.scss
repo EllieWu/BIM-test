@@ -61,7 +61,8 @@ body{
 	// background-image: url("https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895327.jpg?w=1060&t=st=1659930198~exp=1659930798~hmac=184909fb22f9b18b9e459fea871c13f5b259fdab61e29c0c6a17e93fbf5b5744");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895327.jpg?w=1060&t=st=1659930198~exp=1659930798~hmac=184909fb22f9b18b9e459fea871c13f5b259fdab61e29c0c6a17e93fbf5b5744') no-repeat 0% 10%/ cover;
+	// background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895327.jpg?w=1060&t=st=1659930198~exp=1659930798~hmac=184909fb22f9b18b9e459fea871c13f5b259fdab61e29c0c6a17e93fbf5b5744') no-repeat 0% 10%/ cover;
+	background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('http://img-qn.51miz.com/preview/video/00/00/15/11/V-151172-A76A5E41O.jpg') no-repeat 0% 10%/ cover;
 	height: 100vh;
 	font-weight: bold;
 }

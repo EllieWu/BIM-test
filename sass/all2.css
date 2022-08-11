@@ -68,7 +68,7 @@ img {
 body {
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895327.jpg?w=1060&t=st=1659930198~exp=1659930798~hmac=184909fb22f9b18b9e459fea871c13f5b259fdab61e29c0c6a17e93fbf5b5744") no-repeat 0% 10%/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("http://img-qn.51miz.com/preview/video/00/00/15/11/V-151172-A76A5E41O.jpg") no-repeat 0% 10%/cover;
   height: 100vh;
   font-weight: bold;
 }
@@ -83,7 +83,7 @@ body {
 
 .bannerContainer {
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   color: white;
   justify-content: space-between;
@@ -99,9 +99,9 @@ body {
 }
 .bannerContainer-btn {
   border-radius: 8px;
-  background-color: rgba(195, 195, 195, 0.3607843137);
+  background-color: rgba(34, 34, 34, 0.2901960784);
   padding: 11px;
-  width: 45%;
+  width: 40%;
 }
 
 .btn-group {
@@ -142,18 +142,34 @@ body {
   margin-top: 0.75rem;
 }
 
-.dropdown ul {
-  background-color: white;
-}
-
 .dropdown-menu {
   position: absolute;
-  background-color: transparent;
+  background-color: #222;
   border: 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+.dropdown-menu li a {
+  color: white;
 }
 .dropdown-menu li a:hover {
   background-color: #626262;
   color: white;
+}
+
+.dropdown .dropdown-menu {
+  transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown.open .dropdown-menu {
+  transition: max-height 1s, opacity 0.2s, visibility 0s;
+  max-height: 100vh;
+  opacity: 1;
+  visibility: visible;
 }
 
 .button-dropdown {
@@ -172,6 +188,12 @@ body {
   outline: 0px;
 }
 
+.navbar-inverse .navbar-toggle {
+  border: 0px;
+}
+.navbar-inverse .navbar-toggle:focus {
+  background-color: unset;
+}
 .navbar-inverse .navbar-nav {
   float: unset;
 }
@@ -180,6 +202,11 @@ body {
 }
 .navbar-inverse .navbar-brand {
   color: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px 5px 15px;
+}
+.navbar-inverse .navbar-brand img {
+  display: unset;
+  margin-right: 12px;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.8);
@@ -195,6 +222,10 @@ body {
   padding: 5px 10px;
 }
 
+.bg-t {
+  background-color: transparent;
+}
+
 @media (max-width: 992px) {
   .building-name {
     width: 100%;
@@ -205,7 +236,13 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: white;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+  }
   .btn-group {
     justify-content: start;
   }

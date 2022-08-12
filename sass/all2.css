@@ -186,6 +186,7 @@ body {
 }
 .btn:focus {
   outline: 0px;
+  color: #dcdfe8;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -315,16 +316,6 @@ body {
   padding: 18px;
 }
 
-.detail-btn {
-  background-color: rgba(137, 135, 135, 0.8196078431);
-  border: 0px;
-  padding: 10px 0px;
-  border-radius: 7px;
-}
-.detail-btn img {
-  width: 50%;
-}
-
 .body-content {
   display: flex;
   flex-direction: column;
@@ -367,4 +358,17 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-top: 30%;
+}
+.fix-icon .detail-btn {
+  background-color: transparent;
+  border: 0px;
+}
+.fix-icon .detail-btn img {
+  width: 50%;
+  background-color: rgba(137, 135, 135, 0.8196078431);
+  padding: 12px 10px 10px 12px;
+  border-radius: 8px;
+}
+.fix-icon .detail-btn img:hover {
+  background-color: rgba(114, 112, 112, 0.82);
 }/*# sourceMappingURL=all2.css.map */

@@ -40,15 +40,7 @@
         }
     }
 }
-.detail-btn{
-    background-color: #898787d1;
-    border: 0px;
-    padding: 10px 0px;
-    border-radius: 7px;
-     img{
-        width: 50%;
-     }
-}
+
 .body-content{
     display: flex;
     flex-direction: column;
@@ -89,4 +81,17 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 30%;
+    .detail-btn{
+        background-color: transparent;
+        border: 0px;
+         img{
+            width: 50%;
+            background-color: rgba(137, 135, 135, 0.8196078431);
+            padding: 12px 10px 10px 12px;
+            border-radius: 8px;
+            &:hover{
+                background-color: rgb(114 112 112 / 82%);
+            }
+         }
+    }
 }

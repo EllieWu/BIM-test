@@ -32,6 +32,9 @@
         text-align: center;
         width: 14%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .accordion-body{
             height: 150px;
         }
